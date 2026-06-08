@@ -3,7 +3,7 @@ Description=Ollama Container
 After=local-fs.target
 
 [Container]
-Image=docker.io/ollama/ollama:0.19.0
+Image=docker.io/ollama/ollama:0.30.6
 AddDevice=nvidia.com/gpu=all
 PublishPort=127.0.0.1:11434:11434/tcp
 Volume=ollama:/root/.ollama:Z
