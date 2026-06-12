@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+
+# See https://github.com/CachyOS/CachyOS-Settings/blob/b1aedc79d4f5edab86eb9d22a972ba6994c49b26/usr/bin/dlss-swapper
+
+export PROTON_ENABLE_NGX_UPDATER=1
+export DXVK_NVAPI_DRS_NGX_DLSS_RR_OVERRIDE=on
+export DXVK_NVAPI_DRS_NGX_DLSS_SR_OVERRIDE=on
+export DXVK_NVAPI_DRS_NGX_DLSS_FG_OVERRIDE=on
+export DXVK_NVAPI_DRS_NGX_DLSS_RR_OVERRIDE_RENDER_PRESET_SELECTION=render_preset_latest
+export DXVK_NVAPI_DRS_NGX_DLSS_SR_OVERRIDE_RENDER_PRESET_SELECTION=render_preset_k
+
+# applied variables, now execute the rest of the command
+exec "$@"
