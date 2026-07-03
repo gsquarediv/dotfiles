@@ -3,12 +3,13 @@ Description=Ollama Container
 After=local-fs.target
 
 [Container]
-Image=docker.io/ollama/ollama:0.30.6
+Image=docker.io/ollama/ollama:0.30.11
 AddDevice=nvidia.com/gpu=all
 PublishPort=127.0.0.1:11434:11434/tcp
 Volume=ollama:/root/.ollama:Z
 Timezone=local
 Environment=OLLAMA_NO_CLOUD=1
+Environment=OLLAMA_FLASH_ATTENTION=1
 Environment=OLLAMA_KV_CACHE_TYPE=q8_0
 Entrypoint=
 Exec=/bin/sh -c "exec /bin/ollama serve 2>&1"
