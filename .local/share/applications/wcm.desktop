@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Wayfire Config Manager
+Comment=Configure Wayfire Settings
+Exec=wcm
+Icon=wcm
+Type=Application
+Categories=Settings;DesktopSettings;Utility;
+OnlyShowIn=Wayfire
