@@ -17,6 +17,7 @@ else
     unset INSTALL4J_ADD_VM_PARAMS
 fi
 
+export HISTSIZE=1000
 export SYSTEMD_LESS="FRSMK"
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
