@@ -36,6 +36,9 @@ unset rc
 if command -v sudo-rs &> /dev/null; then
     alias sudo='sudo-rs '
 fi
+if command -v kitty &> /dev/null; then
+    alias ssh='kitty +kitten ssh'
+fi
 alias diff='diff --color=auto'
 alias dotfile='/usr/bin/git --git-dir=${HOME}/.dotfiles/ --work-tree=$HOME'
 alias bottles-cli='flatpak run --command=bottles-cli com.usebottles.bottles'
