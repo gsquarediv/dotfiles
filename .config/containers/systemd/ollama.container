@@ -1,6 +1,5 @@
 [Unit]
 Description=Ollama Container
-After=local-fs.target
 
 [Container]
 Image=docker.io/ollama/ollama:latest
