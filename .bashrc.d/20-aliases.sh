@@ -6,7 +6,7 @@ fi
 if command -v kitty &> /dev/null; then
     alias ssh='kitty +kitten ssh'
 fi
-if [ -d "${HOME}/.dotfiles" ]; then
+if [ -d "${HOME}/.dotfiles" ] && command -v git &> /dev/null; then
     alias dotfile='/usr/bin/git --git-dir=${HOME}/.dotfiles/ --work-tree=$HOME'
 fi
 if command -v flatpak &> /dev/null && ! command -v bottles-cli &> /dev/null; then
