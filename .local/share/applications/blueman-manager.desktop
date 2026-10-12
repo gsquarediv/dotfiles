@@ -82,4 +82,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=GTK;GNOME;Settings;HardwareSettings;
-NotShowIn=GNOME;
+OnlyShowIn=wlroots;
